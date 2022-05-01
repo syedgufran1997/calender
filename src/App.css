@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.listmainWrapper {
   display: flex;
   flex-direction: column;
+  width: 80%;
+  margin: 10vh auto;
+  border: 1px solid lightgrey;
+  padding: 1em;
+}
+.listmainWrapper li {
+  list-style: none;
+}
+.listWrapper {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 1em 0;
+}
+.timeWrapper {
+  display: flex;
+}
+.timeWrapper h4 {
+}
+.slotWrapper {
+  margin: 0 0.5em;
+  border-bottom: 1.5px solid lightgrey;
+  width: 85%;
+  display: flex;
+  padding: 0 0.5em;
+}
+.slotEventWrapper {
+  z-index: 10;
+  background-color: skyblue;
   color: white;
+  padding: 0.5em 1em 1em;
+  border-radius: 10px;
+  margin: 0.2em 0 0.2em -0.5em;
+  border-left: 2px solid white;
 }
-
-.App-link {
-  color: #61dafb;
+.labelText {
+  font-weight: 700;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.timeText {
+  font-weight: 500;
+}
+.MainModalWrapper {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  right: 50;
+  margin: 10% 32%;
+  background-color: lightgrey;
+  width: 40vw;
+  max-width: 700px;
+}
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+.modalHeader h4 {
+  cursor: pointer;
+}
+.modalContent {
+  padding: 2em;
+}
+.modalContent input {
+  padding: 0.5em;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid gray;
+}
+.modalContent button {
+  outline: none;
+  padding: 0.5em;
+  display: block;
+  margin: 1em auto;
+  border-radius: 5px;
+}
+.eventTimeWrap {
+  margin: 1em auto;
+  display: flex;
+  justify-content: space-between;
+}
+.eventTimeWrap input {
+  width: 48%;
+}
+.editDeleteButton {
+  display: flex;
+  justify-content: space-between;
+}
+.editDeleteButton button {
+  width: 45%;
 }
